@@ -1,3 +1,5 @@
+//brute force
+
 import java.util.*;
 
 public class MaxSubArraySum1 {
