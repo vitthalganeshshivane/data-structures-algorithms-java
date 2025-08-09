@@ -1,3 +1,5 @@
+package Operations;
+
 public class GetIthBit {
 
     public static int getIthBit(int n, int i) {
