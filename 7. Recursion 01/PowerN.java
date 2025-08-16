@@ -19,7 +19,9 @@ public class PowerN {
             return 1;
         }
 
-        int halfPowerSq = optiPower(a, n / 2) * optiPower(a, n / 2);
+        int halfPower = optiPower(a, n / 2);
+
+        int halfPowerSq = halfPower * halfPower;
         // n is odd
         if (n % 2 != 0) {
             halfPowerSq = a * halfPowerSq;
