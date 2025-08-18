@@ -1,5 +1,6 @@
 public class Inheritance {
 
+    // 1. single lever inheritance
     // base class or parent class
     static class Animal {
         String color;
@@ -22,9 +23,22 @@ public class Inheritance {
         }
     }
 
+    // 2. multi-level inheritance
+
+    static class Mammal extends Animal {
+        int legs;
+    }
+
+    static class Dog extends Mammal {
+        String breed;
+    }
+
     public static void main(String args[]) {
         Fish shark = new Fish();
         shark.eat();
+        Dog dobby = new Dog();
+        dobby.legs = 4;
+        System.out.println(dobby.legs);
 
     }
 }
