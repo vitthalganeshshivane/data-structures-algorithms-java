@@ -33,6 +33,27 @@ public class Inheritance {
         String breed;
     }
 
+    // 3. Hierarchial Inheritance (multiple child ro derived classes classes from a
+    // single base or
+    // parent class)
+    static class Mammals extends Animal {
+        void walk() {
+            System.out.println("Walk");
+        }
+    }
+
+    static class Fish1 extends Animal {
+        void swim() {
+            System.out.println("Swim");
+        }
+    }
+
+    static class Bird extends Animal {
+        void fly() {
+            System.out.println("fly");
+        }
+    }
+
     public static void main(String args[]) {
         Fish shark = new Fish();
         shark.eat();
