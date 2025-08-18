@@ -54,12 +54,25 @@ public class Inheritance {
         }
     }
 
+    // Hybrid Inheritance
+    static class Shark1 extends Fish1 {
+        void size() {
+            System.out.println("big");
+        }
+    }
+
+    static class Peacock extends Bird {
+
+    }
+
     public static void main(String args[]) {
         Fish shark = new Fish();
         shark.eat();
         Dog dobby = new Dog();
         dobby.legs = 4;
         System.out.println(dobby.legs);
+        Peacock p1 = new Peacock();
+        p1.fly();
 
     }
 }
