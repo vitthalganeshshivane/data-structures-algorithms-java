@@ -13,9 +13,15 @@ public class Sorting {
 
         System.out.println("Before Sort : " + list);
 
+        // Ascending order
         Collections.sort(list);
 
         System.out.println("After Sort : " + list);
+
+        // Descending order
+        Collections.sort(list, Collections.reverseOrder());
+
+        System.out.println("After Reversing : " + list);
 
     }
 }
