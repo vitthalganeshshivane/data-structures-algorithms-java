@@ -31,5 +31,13 @@ public class Creation {
         System.out.println(list.contains(1));
         System.out.println(list.contains(11));
 
+        // size of an ArrayList
+        System.out.println("The size of given arrayList named list is :- " + list.size());
+
+        // Print the arrayList
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
     }
 }
